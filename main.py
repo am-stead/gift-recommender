@@ -2,12 +2,16 @@
 
 import os
 import openai
+from db import init_db, save_recommendation
 from duckduckgo_search import DDGS
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize the SQLite database (creates table if not exists)
+init_db()
 
 # Agent 1: Generate gift idea + pitch
 def get_gift_idea(person_info):
@@ -31,15 +35,21 @@ def find_product_link(gift_idea):
             return result["href"]
     return "No product link found."
 
-# Coordinator: Run the workflow
+# Main function to run the gift recommender workflow
 def run_agentic_gift_recommender(person_info):
     gift_text = get_gift_idea(person_info)
     first_line = gift_text.split("\n")[0]
     product_link = find_product_link(first_line)
+
+    # Save to the database
+    save_recommendation(person_info, gift_text, product_link)
+
     return {
         "gift_idea_and_pitch": gift_text,
         "product_link": product_link
     }
+
+
 
 # Run the test workflow
 if __name__ == "__main__":
