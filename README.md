@@ -83,12 +83,13 @@ This will demonstrate the new database capabilities and show sample recommendati
 - Find product links automatically  
 - Save recommendation history to local database
 - Search through past recommendations
-- Both CLI and web interfaces available
+- CLI interface for interactive gift recommendations
 
 ### Coming Soon (Phase 2)
 - Price range filtering
 - Occasion-based recommendations (birthdays, holidays, etc.)
 - Gift categorization system
+- Web interface with enhanced UI
 - Enhanced UI with user preferences
 - Comprehensive testing framework
 
