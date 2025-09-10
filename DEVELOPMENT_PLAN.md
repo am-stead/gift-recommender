@@ -20,7 +20,6 @@ The Gift Recommender app is currently a functional Python application with the f
 ### Tech Stack
 - Python 3.x
 - OpenAI API (GPT-4)
-- Streamlit (Web UI)
 - DuckDuckGo Search API
 - python-dotenv
 
