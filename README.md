@@ -58,3 +58,39 @@ You’ll be prompted to enter a description of the person, and the app will retu
 ## 🛡️ Disclaimer
 
 This app uses AI-generated suggestions and public search results. Always verify product links and use your judgment before purchasing.
+
+---
+
+## 🚧 Development Status
+
+This project is actively under development! Check out our comprehensive [Development Plan](DEVELOPMENT_PLAN.md) for the complete roadmap.
+
+### Recent Updates
+- ✅ **Phase 1 Foundation**: Fixed missing database functionality, added data persistence
+- ✅ **Database Integration**: All recommendations are now saved and retrievable
+- 🚧 **Phase 2 Planning**: Core feature enhancements (price filters, occasions, categories)
+
+### Quick Demo
+Try the enhanced functionality:
+```bash
+python demo.py
+```
+
+This will demonstrate the new database capabilities and show sample recommendations.
+
+### Current Capabilities
+- Generate personalized gift ideas using AI
+- Find product links automatically  
+- Save recommendation history to local database
+- Search through past recommendations
+- CLI interface for interactive gift recommendations
+
+### Coming Soon (Phase 2)
+- Price range filtering
+- Occasion-based recommendations (birthdays, holidays, etc.)
+- Gift categorization system
+- Web interface with enhanced UI
+- Enhanced UI with user preferences
+- Comprehensive testing framework
+
+See [DEVELOPMENT_PLAN.md](DEVELOPMENT_PLAN.md) for complete details and timeline.
