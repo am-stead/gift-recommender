@@ -8,7 +8,6 @@ The Gift Recommender app is currently a functional Python application with the f
 - ✅ Core AI-powered gift recommendation engine using OpenAI GPT-4
 - ✅ Product search integration with DuckDuckGo
 - ✅ Command-line interface (`main.py`)
-- ✅ Web interface using Streamlit (`app.py`)
 - ✅ Basic workflow connecting idea generation with product search
 
 ### Current Issues
